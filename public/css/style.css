@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding : 0;
+}
+
+.header{
+    padding-top: 1em;
+	min-height: 80vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../img/lot_bg_2.jpeg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navbar .logo {
+    color: white;
+}
+
+.navbar .nav-routes {
+    color: white;
+}
+
+.navbar .nav-routes ul li{
+    list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+
+.navbar .nav-routes ul li a {
+    color: white;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: 'poppins', cursive;
+    transition: 0.5s;
+}
+
+.navbar .nav-routes ul li a:hover {
+    color: red;
+}
+
+.text-box{
+	width: 90%;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.text-box h1{
+	font-size: 62px;
+}
+
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 14px;
+	color: white;
+	font:normal 16px Verdana, Forte;
+}
+
+.text-box a{
+	font-family: 'Lobster', cursive;
+}
+
+.button{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	border:1px solid #fff;
+	padding: 12px 34px;
+	font-size: 18px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+.button:hover{
+	border:1px solid white;
+	background: white;
+	color: black;
+	transition: 0.5s;
+}
+
+nav .fa{
+	display: none;
+}
+
+.section {
+    padding: 25px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.box {
+	
+}
+/*--------------------------MEDIA------------------------*/
+
+@media(max-width: 700px){
+	.text-box h1{
+		font-size: 20px;
+	}
+	.nav-links ul li {
+		display: block;
+	}
+	.nav-links{
+		position: fixed;
+		background:#f44336;
+		width: 200px;
+		height: 100vh;
+		top:0;
+		right: -200px;
+		text-align: left;
+		z-index: 2;
+		transition :1s;
+	}
+
+	nav .fa{
+		display: block;
+		color: #fff;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+
+	.nav-links ul{
+		padding: 30px;
+	}
+
+}
